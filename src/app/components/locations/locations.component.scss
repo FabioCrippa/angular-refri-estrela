@@ -1,0 +1,190 @@
+.locations {
+  padding: 6rem 2rem;
+  background: white;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__label {
+    display: inline-block;
+    color: #FF6B6B;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #FF6B6B;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+
+      .locations__card-icon {
+        background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+        transform: scale(1.1);
+      }
+
+      .locations__card-action {
+        color: #FF6B6B;
+      }
+    }
+  }
+
+  &__card-icon {
+    width: 60px;
+    height: 60px;
+    background: #f7fafc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      color: #FF6B6B;
+    }
+  }
+
+  &__card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-address {
+    color: #718096;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  &__card-badge {
+    display: inline-block;
+    background: #fff5f5;
+    color: #FF6B6B;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__card-action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4a5568;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__cta {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  &__cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+  }
+
+  &__cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      background: #22c55e;
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

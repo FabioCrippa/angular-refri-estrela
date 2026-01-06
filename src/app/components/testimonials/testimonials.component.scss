@@ -1,0 +1,130 @@
+.testimonials {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__label {
+    display: inline-block;
+    color: #FF6B6B;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  &__card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__card-quote {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    opacity: 0.1;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      color: #FF6B6B;
+    }
+  }
+
+  &__card-stars {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #f59e0b;
+    }
+  }
+
+  &__card-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  &__card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__card-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  &__card-info {
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: #718096;
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
