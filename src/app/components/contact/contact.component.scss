@@ -2,14 +2,22 @@
   padding: 6rem 2rem;
   background: white;
 
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+
   &__header {
     text-align: center;
     margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__label {
     display: inline-block;
-    color: #FF6B6B;
+    color: #006241;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -79,7 +87,7 @@
     flex-shrink: 0;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    background: #006241;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -169,8 +177,8 @@
 
       &:focus {
         outline: none;
-        border-color: #FF6B6B;
-        box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+        border-color: #006241;
+        box-shadow: 0 0 0 3px rgba(0, 98, 65, 0.15);
       }
 
       &.error {
@@ -207,7 +215,7 @@
 
   &__form-submit {
     width: 100%;
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    background: #006241;
     color: white;
     border: none;
     padding: 1rem 2rem;
